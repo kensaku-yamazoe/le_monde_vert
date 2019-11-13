@@ -5,17 +5,17 @@
         <img src="@/assets/logo.png" class="logo-img pull-left"/>
       </router-link>
     </div>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navber-right">
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav mr-5">
             <li class="nav-item">
                 <router-link class="col-2 px-4" to="/">home</router-link>
             </li>
             <li class="nav-item">
-                <router-link class="px-4" to="/test1">Order</router-link>
+                <router-link class="px-4" to="/Order">Order</router-link>
             </li>
             <li class="nav-item">
-                <router-link class="px-4" to="/test2">test2</router-link>
+                <router-link class="px-4" to="/Contact">Contact</router-link>
             </li>
             <li class="nav-item">
                 <router-link class="px-4" to="/test3">test3</router-link>
@@ -26,11 +26,14 @@
   </div>
 </template>
 
-<style>
+<style scoped>
   .logo{
     height:100px;
   }
   .logo-img{
     height: 100px;
+  }
+  .nav-item{
+    color: black;
   }
 </style>

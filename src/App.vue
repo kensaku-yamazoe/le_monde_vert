@@ -2,7 +2,7 @@
   <div id="app">
     <myheader></myheader>
     <router-view/>
-    <button class="btn btn-primary">test</button>
+    <button class="btn mb-5">ページトップ</button>
   </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
   name: 'App',
   components: {
     myheader
-  },
+  }
 }
 </script>
 
@@ -31,5 +31,16 @@ export default {
   left:0;
 }
 
-.wf-notosansjapanese { font-family: "Noto Sans JP"; }
+*{
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.btn{
+  border: 1px solid rgb(201, 201, 201);
+  font-family: 'Cormorant Garamond', serif;
+  color: rgb(201, 201, 201);
+}
+.btn:hover{
+  border: 1px solid black;
+}
 </style>

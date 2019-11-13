@@ -3,8 +3,8 @@ import BootstrapVue from 'bootstrap-vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 
-import test1 from '@/components/Order'
-import test2 from '@/components/test2'
+import Order from '@/components/Order'
+import Contact from '@/components/Contact'
 import test3 from '@/components/test3'
 
 
@@ -21,19 +21,20 @@ export default new Router({
       component: Home
     },
     {
-      path: '/test1',
-      name: 'test1',
-      component: test1
+      path: '/Order',
+      name: 'Order',
+      component: Order
     },
     {
-      path: '/test2',
-      name: 'test2',
-      component: test2
+      path: '/Contact',
+      name: 'Contact',
+      component: Contact
     },
     {
       path: '/test3',
       name: 'test3',
       component: test3
-    }
+    },
   ]
 })
+
