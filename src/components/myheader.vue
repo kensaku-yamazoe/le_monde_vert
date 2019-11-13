@@ -2,11 +2,11 @@
   <div>
     <div class="logo mt-3">
       <router-link to="/">
-        <img src="@/assets/logo.png" class="logo-img pull-left"/>
+        <img src="@/assets/logo.png" class="logo-img ml-5"/>
       </router-link>
     </div>
     <nav class="navbar navbar-expand-lg navber-right">
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav mr-5">
 
 
@@ -67,6 +67,7 @@
   }
   .logo-img{
     height: 100px;
+    float:left;
   }
   .nav-item{
     color: black;
