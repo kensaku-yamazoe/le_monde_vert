@@ -8,18 +8,53 @@
     <nav class="navbar navbar-expand-lg navber-right">
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav mr-5">
+
+
             <li class="nav-item">
-                <router-link class="col-2 px-4" to="/">home</router-link>
+                <router-link
+                class="col-2 px-4"
+                to="/"
+                active-class="link--active"
+                exact
+                >
+                home
+                </router-link>
             </li>
+
             <li class="nav-item">
-                <router-link class="px-4" to="/Order">Order</router-link>
+                <router-link 
+                class="px-4" 
+                to="/Order"
+                active-class="link--active"
+                exact
+                >
+                Order
+                </router-link>
             </li>
+
             <li class="nav-item">
-                <router-link class="px-4" to="/Contact">Contact</router-link>
+                <router-link 
+                class="px-4" 
+                to="/Contact"
+                active-class="link--active"
+                exact
+                >
+                Contact
+                </router-link>
             </li>
+
             <li class="nav-item">
-                <router-link class="px-4" to="/test3">test3</router-link>
+                <router-link 
+                class="px-4" 
+                to="/test3"
+                active-class="link--active"
+                exact
+                >
+                test3
+                </router-link>
             </li>
+
+
             </ul>
         </div>
     </nav>
@@ -35,5 +70,8 @@
   }
   .nav-item{
     color: black;
+  }
+  .link--active{
+    color:aquamarine;
   }
 </style>
