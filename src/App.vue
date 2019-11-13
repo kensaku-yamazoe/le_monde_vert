@@ -2,7 +2,7 @@
   <div id="app">
     <myheader></myheader>
     <router-view/>
-    <button class="btn mb-5">ページトップ</button>
+    <button class="btn m-5">ページトップ</button>
   </div>
 </template>
 

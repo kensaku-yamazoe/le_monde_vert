@@ -4,7 +4,7 @@
 
     <div class="hello">
       <h6 class="m-4">{{ msg }}</h6>
-      <img src="https://picsum.photos/1200/400" alt="">
+      <img src="@/assets/IMG_7343-3.jpg" class="main-img img-fluid" alt="">
     </div>
 
     <div class="text">
@@ -15,22 +15,22 @@
       <h1 class="m-2">Parsonal color Sample</h1>
       <h6 class="mb-5">あなたに似合う色はどれですか？</h6>
       <div class="sample-image mb-5">
-          <img src="https://picsum.photos/1200/300" class="img-fluid" alt="">
+          <img src="https://picsum.photos/1200/300" class="spring-img img-fluid" alt="">
           <div class="sample-image-text">spring</div>
       </div>
 
       <div class="sample-image mb-5">
-          <img src="https://picsum.photos/1200/300" class="img-fluid" alt="">
+          <img src="https://picsum.photos/1200/300" class="summer-img img-fluid" alt="">
           <div class="sample-image-text">summer</div>
       </div>
 
       <div class="sample-image mb-5">
-          <img src="https://picsum.photos/1200/300" class="img-fluid" alt="">
+          <img src="https://picsum.photos/1200/300" class="autumun-img img-fluid" alt="">
           <div class="sample-image-text">autumn</div>
       </div>
 
       <div class="sample-image mb-5">
-          <img src="https://picsum.photos/1200/300" class="img-fluid" alt="">
+          <img src="https://picsum.photos/1200/300" class="winter-img img-fluid" alt="">
           <div class="sample-image-text">winter</div>
       </div>
     </div>
@@ -83,5 +83,11 @@ li {
   transform: translate(-50%,-50%);
   margin:0;
   padding:0;
+}
+
+.main-img{
+  height:500px;
+  width:1200px;
+  object-fit:cover;
 }
 </style>
