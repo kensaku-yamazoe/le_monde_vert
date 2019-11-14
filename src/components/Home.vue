@@ -2,14 +2,22 @@
 
   <div class="home">
 
-    <div class="hello">
-      <h6 class="m-4">{{ msg }}</h6>
-      <img src="@/assets/IMG_7343-3.jpg" class="main-img img-fluid" alt="">
-    </div>
+    <transition name="fade" appear>
+      <div class="hello">
+        <h6 class="m-4">{{ msg }}</h6>
+        <img src="@/assets/IMG_7343-3.jpg" class="main-img img-fluid" alt="">
+      </div>
+    </transition>
 
     <div class="text">
-      
+      <h1 class="sample mb-5">sample message</h1>
+      <p>たくしのこんなさびしい考は</p>
+      <p>みんなよるのためにでるのだ</p>
+      <p>夜があけて海岸へかかるなら</p>
+      <p>そして波がきらきら光るなら</p>
+      <p>なにもかもみんないいかもしれない</p>
     </div>
+
 
     <div class="sample mt-5">
       <h1 class="m-2">Parsonal color Sample</h1>
@@ -56,6 +64,26 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.fade-enter{
+    opacity: 0;
+}
+.fade-enter-active{
+    transition: 2s;
+}
+.fade-enter-to{
+    opacity: 1;
+}
+.fade-leave{
+    opacity: 1;
+}
+.fade-leave-active{
+    transition: 2s;
+}
+.fade-leave-to{
+    opacity: 0;
+}
+
+
 h1, h2 {
   font-weight: normal;
 }
