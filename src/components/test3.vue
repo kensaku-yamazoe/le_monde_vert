@@ -16,10 +16,32 @@
             <p class="slide-text m-5" v-if="show">Slider</p>
         </transition>
 
+    <div id="vue_slideupdown">
+        <!-- vuejs-slidemenu -->
+        <div class="cls_toggle_expand_collapse" v-on:click="toggleCtrlPanel">
+            <i class="fa fa-caret-down"  v-if="slideY"></i>
+            <i class="fa fa-caret-right" v-if="!slideY"></i>
+            {{textToggle}}
+        </div>
 
-        <transition>
-        
+        <!-- slideで出てくるようにする -->
+        <transition name="slideX">
+            <div class="menu_slide_accordion" v-if="slideY">
+                slideUp(), slideDown() したい内容を任意に書く。<br>
+                純粋なhtmlでも良いし、<br>
+                Vueの要素を書いても良い。<br>
+            </div>
         </transition>
+
+
+        <div>
+            デモ。<br>
+            <br>
+            その他の要素。<br>
+            この部分は、上部のメニューの開閉に伴ってアップダウンする。<br>
+            ※こちらは「スライドアップ、スライドダウンの効果無し版」
+        </div>
+    </div>
 
 
 
@@ -30,25 +52,58 @@
 
 
 <script>
-// import Comp1 from './components/Comp1.vue'
-// import Comp2 from './components/Comp2.vue'
-
 export default({
-    // components:{
-    //     Comp1,
-    //     Comp2
-    // },
+    el:"#vue_slideupdown",
+
     data(){
         return{
             show:true,
-            // myComponent: "Comp1",
-            // myComponent: "Comp2"
+            textToggle: "開閉するトグル（ここを押す）",
+            slideY: false,
         };
+    },
+    methods:{
+        toggleCtrlPanel: function () {
+        this.slideY = !this.slideY;
+        }
     }
 });
 </script>
 
 <style scoped>
+
+
+.cls_toggle_expand_collapse {
+    margin  : 4px;
+    padding : 8px;
+    cursor  : pointer;
+    background-color: aquamarine
+}
+
+/*
+ * Slide / accordionメニューの設定
+ */ 
+.menu_slide_accordion {
+    background-color: antiquewhite;
+    height: 120px;
+    overflow: hidden;
+}
+/* Vueの方で自動的に付与されるクラス::-enter-xx */
+.trans_slide-enter-active, .trans_slide-leave-active {
+    transition: all 5s;
+}
+.trans_slide-enter, .trans_slide-leave-to {
+    height: 0;
+}
+
+
+
+
+
+
+
+
+
 .fade-enter{
     opacity: 0;
 }

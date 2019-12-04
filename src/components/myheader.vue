@@ -54,6 +54,17 @@
                 </router-link>
             </li>
 
+            <li class="nav-item">
+                <router-link 
+                class="px-4" 
+                to="/Comp1"
+                active-class="link--active"
+                exact
+                >
+                comp1
+                </router-link>
+            </li>
+
 
             </ul>
         </div>
