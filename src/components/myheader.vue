@@ -1,6 +1,6 @@
 <template> 
-  <div>
-    <div class="logo mt-3">
+  <div class=header>
+    <div class="logo">
       <router-link to="/">
         <img src="@/assets/logo.png" class="logo-img ml-5"/>
       </router-link>
@@ -54,6 +54,17 @@
                 </router-link>
             </li>
 
+            <li class="nav-item">
+                <router-link 
+                class="px-4" 
+                to="/Comp1"
+                active-class="link--active"
+                exact
+                >
+                comp1
+                </router-link>
+            </li>
+
 
             </ul>
         </div>
@@ -62,6 +73,10 @@
 </template>
 
 <style scoped>
+  .header{
+    padding-top: 30px;
+    background-color: antiquewhite;
+  }
   .logo{
     height:100px;
   }
@@ -70,9 +85,12 @@
     float:left;
   }
   .nav-item{
-    color: black;
+    color: #b9b9b9;
   }
   .link--active{
-    color:aquamarine;
+    border-bottom: 1px solid #b9b9b9;
+  }
+  a{
+    text-decoration: none;
   }
 </style>

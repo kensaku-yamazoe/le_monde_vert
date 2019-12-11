@@ -6,6 +6,7 @@ import Home from '@/components/Home'
 import Order from '@/components/Order'
 import Contact from '@/components/Contact'
 import test3 from '@/components/test3'
+import Comp1 from '@/components/Comp1'
 
 
 Vue.use(Router)
@@ -34,6 +35,11 @@ export default new Router({
       path: '/test3',
       name: 'test3',
       component: test3
+    },
+    {
+      path: '/Comp1',
+      name: 'Comp1',
+      component: Comp1
     },
   ]
 })
