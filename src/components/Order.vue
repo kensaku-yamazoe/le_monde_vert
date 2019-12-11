@@ -104,7 +104,7 @@
 
 </template>
 
-<style>
+<style scoped>
     .image{
         height: 300px;
         width: 300px;
