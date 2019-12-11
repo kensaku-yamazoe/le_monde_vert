@@ -19,82 +19,28 @@
     </div>
 
 
+
     <div class="sample mt-5">
-      <h1>Which is Your Color?</h1>
-      <h6 class="mt-5 mb-5">あなたに似合う色はどれですか？</h6>
-
-      <div class="sample-image mt-5 mb-5" v-on:click="toggle">
-          <img src="https://picsum.photos/1200/300" class="image img-fluid" id="spring" alt="">
+      <h1 class="m-2">Parsonal color Sample</h1>
+      <h6 class="mb-5">あなたの色は？</h6>
+      <div class="sample-image mb-5">
+          <!-- <div class="spring-box"></div> -->
+          <img class="season-img img-fluid" src='https://lh3.googleusercontent.com/a1WiseEVAqwaXKrelUKmlxB_ZZd_EMRb0jvaPfIydzO3waMZBhcDXhkvytah8z84J9CvH1K6loWcmnf9osKhADoXuBabVVv6bJImd9NQr8RtwxVVfYsn46BCGzpN72CoKZrzUR0wyEM=w2400'>
           <div class="sample-image-text">spring</div>
-
-          <transition v-on:enter="onEnter" v-on:leave="onLeave">
-            <div class="image-inner" v-show="show">
-              <img class="inner-image" src='https://lh3.googleusercontent.com/pWb5099uK2qCyjbIvipTd7gSlaKmnLIkadMSBw4-uN7q9QW2M8sQ60mLHmD96YcPqwi9RIPoitHk4mzxTxoE_8sRQt8cdZ_eXXk27pH1rAVLFCZJSbV1-nbrVld0GF9wxRJBCd3zHn4=w2400'>
-                <div class="image-inner-text">
-                  春っぽい文章
-                </div>
-            </div>
-          </transition>
       </div>
 
-      <div class="sample-image mt-5 mb-5" v-on:click="toggle">
-          <img src="https://picsum.photos/1200/300" class="image img-fluid" id="summer" alt="">
-          <div class="sample-image-text">summer</div>
-
-          <transition v-on:enter="onEnter" v-on:leave="onLeave">
-            <div class="image-inner" v-show="show">
-              <img class="inner-image" src='https://lh3.googleusercontent.com/pWb5099uK2qCyjbIvipTd7gSlaKmnLIkadMSBw4-uN7q9QW2M8sQ60mLHmD96YcPqwi9RIPoitHk4mzxTxoE_8sRQt8cdZ_eXXk27pH1rAVLFCZJSbV1-nbrVld0GF9wxRJBCd3zHn4=w2400'>
-                <div class="image-inner-text">
-                  春っぽい文章
-                </div>
-            </div>
-          </transition>
-      </div>
-
-
-
-      <div class="sample-image mt-5 mb-5" v-on:click="toggle">
-          <img src="https://picsum.photos/1200/300" class="image img-fluid" id="autumn" alt="">
-          <div class="sample-image-text">autumn</div>
-
-          <transition v-on:enter="onEnter" v-on:leave="onLeave">
-            <div class="image-inner" v-show="show">
-              <img class="inner-image" src='https://lh3.googleusercontent.com/pWb5099uK2qCyjbIvipTd7gSlaKmnLIkadMSBw4-uN7q9QW2M8sQ60mLHmD96YcPqwi9RIPoitHk4mzxTxoE_8sRQt8cdZ_eXXk27pH1rAVLFCZJSbV1-nbrVld0GF9wxRJBCd3zHn4=w2400'>
-                <div class="image-inner-text">
-                  春っぽい文章
-                </div>
-            </div>
-          </transition>
-      </div>
-
-
-
-      <div class="sample-image mt-5 mb-5" v-on:click="toggle">
-          <img src="https://picsum.photos/1200/300" class="image img-fluid" id="winter" alt="">
-          <div class="sample-image-text">winter</div>
-
-          <transition v-on:enter="onEnter" v-on:leave="onLeave">
-            <div class="image-inner" v-show="show">
-              <img class="inner-image" src='https://lh3.googleusercontent.com/pWb5099uK2qCyjbIvipTd7gSlaKmnLIkadMSBw4-uN7q9QW2M8sQ60mLHmD96YcPqwi9RIPoitHk4mzxTxoE_8sRQt8cdZ_eXXk27pH1rAVLFCZJSbV1-nbrVld0GF9wxRJBCd3zHn4=w2400'>
-                <div class="image-inner-text">
-                  春っぽい文章
-                </div>
-            </div>
-          </transition>
-      </div>
-
-      <div class="sample-image mt-5 mb-5">
-          <img src="https://picsum.photos/1200/300" class="image img-fluid" id="spring" alt="">
+      <div class="sample-image mb-5">
+          <img class="season-img" src='https://lh3.googleusercontent.com/0Yw2epNLaQJqu_HG1A4MQ3NyOOHFuwsO8OPoP9U7QbuFuEMgax2NlgHY2H0G9MaTQ-xeHpYW7P1x-HUH55W7ZJsSotW56kR_gxOKGvalUfqsuHhE0aykBbb2_fhn-WHU6qTk2Eq17AU=w2400'>
           <div class="sample-image-text">summer</div>
       </div>
 
-      <div class="sample-image mt-5 mb-5">
-          <img src="https://picsum.photos/1200/300" class="image img-fluid" id="spring" alt="">
+      <div class="sample-image mb-5">
+          <img class="season-img" src='https://lh3.googleusercontent.com/tS4W6LhL2Cs8ADylsD5TNW2iEOGEnYsbbaPJM-Ny-BQIBwwucCGpzAQ2HZI5OPl55d39G54S5me1IVIqOd1gEfEz_Sm3siMLLbAUZHCCVi8uG4APfDJcrzSrvb-EFMFNGdg9HAF-F6I=w2400' />
           <div class="sample-image-text">autumn</div>
       </div>
 
-      <div class="sample-image mt-5 mb-5">
-          <img src="https://picsum.photos/1200/300" class="image img-fluid" id="spring" alt="">
+      <div class="sample-image mb-5">
+          <img class="season-img" src='https://lh3.googleusercontent.com/4W28sCXXNpYEEmb0N4m6wan38v0gmjJX9D0gnl3z0dTJddRKM1YTZM05Xz3wi5k1AQhS1gTnb68c5RbFD4H4QqCFdouTT9Zdi5sq7BwTr-OUC7K8GAl9ReXqBP0N0hS4v_-7zzRtwho=w2400' />
           <div class="sample-image-text">winter</div>
       </div>
     </div>
@@ -106,28 +52,13 @@
 
 
 <script>
-import Comp1 from './Comp1.vue';
-
 export default {
   name: 'Home',
   data () {
     return {
-      msg: 'おしゃれ心を呼び覚ます色彩の魅力、今までにないアプローチでお似合いのお洋服をご提案いたします。',
-      show: false
-    };
-  },
-  methods:{
-    toggle: function(){
-      this.show=!this.show;
-    },
-    onEnter: function(el,done){
-      el.style.display='none';
-      $(el).slideDown(300,done);
-    },
-    onLeave: function(el,done){
-      $(el).slideUp(300,done);
-    },
-  },
+      msg: 'おしゃれ心を呼び覚ます色彩の魅力、今までにないアプローチでお似合いのお洋服をご提案いたします。'
+    }
+  }
 }
 </script>
 
@@ -168,6 +99,7 @@ li {
 }
 .sample{
   margin-top: 100px;
+  font-size: 50px;
 }
 .sample-image{
   position: relative;
@@ -175,7 +107,7 @@ li {
 .sample-image-text{
   position: absolute;
   font-size: 60px;
-  top: 130px;
+  top: 50%;
   left: 50%;
   -ms-transform: translate(-50%,-50%);
   -webkit-transform: translate(-50%,-50%);
@@ -190,21 +122,14 @@ li {
   object-fit:cover;
 }
 
-.image-inner{
-  background-color: beige;
-  display: flex;
+.spring-box{
+  background-color: green;
+  height: 300px;
+  width: 1200px;
 }
-.image-inner-text{
-  margin-top: 50px;
-}
-.image:hover{
-  opacity: 0.6;
-  transition: .5s;
-}
-
-.inner-image{
-  height: 200px;
-  width: 200px;
-  margin: 50px;
+.season-img{
+  height: 300px;
+  width: 1200px;
+  object-fit: cover;
 }
 </style>
