@@ -1,7 +1,5 @@
 <template>
-  <div id="accordion">
-    <accordion></accordion>
-  </div>
+
 </template>
 
 <script>

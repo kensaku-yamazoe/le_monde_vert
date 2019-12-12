@@ -12,6 +12,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free-webfonts": "^1.0.9",
     "bootstrap-vue": "^2.0.4",
     "vue": "^2.5.2",
     "vue-awesome-swiper": "^3.1.3",

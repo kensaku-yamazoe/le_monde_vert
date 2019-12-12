@@ -6,9 +6,21 @@ import router from './router'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
 Vue.use(VueAwesomeSwiper, /* { default global options } */)
+// Font Awesome のメインファイルを import
+
+import '@fortawesome/fontawesome-free-webfonts/css/fontawesome.css'
+
+// 使用するカテゴリーのファイルを import
+
+import '@fortawesome/fontawesome-free-webfonts/css/fa-brands.css'
+import '@fortawesome/fontawesome-free-webfonts/css/fa-regular.css'
+import '@fortawesome/fontawesome-free-webfonts/css/fa-solid.css'
+
+
+
 
 Vue.config.productionTip = false
-Vue.component("Accordion", Accordion);
+
 
 /* eslint-disable no-new */
 new Vue({

@@ -75,7 +75,7 @@
 <style scoped>
   .header{
     padding-top: 30px;
-    background-color: antiquewhite;
+    background-color: #efeee8;
   }
   .logo{
     height:100px;
@@ -84,7 +84,7 @@
     height: 100px;
     float:left;
   }
-  .nav-item{
+  li{
     color: #b9b9b9;
   }
   .link--active{
