@@ -4,7 +4,6 @@
 
     <transition name="fade" appear>
       <div class="hello">
-        <h6 class="m-4">{{ msg }}</h6>
         <img src="@/assets/IMG_7343-3.jpg" class="main-img img-fluid" alt="">
       </div>
     </transition>
@@ -22,7 +21,7 @@
 
     <div class="sample mt-5">
       <h1 class="m-2">Parsonal color Sample</h1>
-      <h6 class="mb-5">あなたの色は？</h6>
+      <p class="your mb-5">あなたの色は？</p>
       <div class="sample-image mb-5">
           <!-- <div class="spring-box"></div> -->
           <img class="season-img img-fluid" src='https://lh3.googleusercontent.com/a1WiseEVAqwaXKrelUKmlxB_ZZd_EMRb0jvaPfIydzO3waMZBhcDXhkvytah8z84J9CvH1K6loWcmnf9osKhADoXuBabVVv6bJImd9NQr8RtwxVVfYsn46BCGzpN72CoKZrzUR0wyEM=w2400'>
@@ -30,17 +29,17 @@
       </div>
 
       <div class="sample-image mb-5">
-          <img class="season-img" src='https://lh3.googleusercontent.com/0Yw2epNLaQJqu_HG1A4MQ3NyOOHFuwsO8OPoP9U7QbuFuEMgax2NlgHY2H0G9MaTQ-xeHpYW7P1x-HUH55W7ZJsSotW56kR_gxOKGvalUfqsuHhE0aykBbb2_fhn-WHU6qTk2Eq17AU=w2400'>
+          <img class="season-img img-fluid" src='https://lh3.googleusercontent.com/0Yw2epNLaQJqu_HG1A4MQ3NyOOHFuwsO8OPoP9U7QbuFuEMgax2NlgHY2H0G9MaTQ-xeHpYW7P1x-HUH55W7ZJsSotW56kR_gxOKGvalUfqsuHhE0aykBbb2_fhn-WHU6qTk2Eq17AU=w2400'>
           <div class="sample-image-text">summer</div>
       </div>
 
       <div class="sample-image mb-5">
-          <img class="season-img" src='https://lh3.googleusercontent.com/tS4W6LhL2Cs8ADylsD5TNW2iEOGEnYsbbaPJM-Ny-BQIBwwucCGpzAQ2HZI5OPl55d39G54S5me1IVIqOd1gEfEz_Sm3siMLLbAUZHCCVi8uG4APfDJcrzSrvb-EFMFNGdg9HAF-F6I=w2400' />
+          <img class="season-img img-fluid" src='https://lh3.googleusercontent.com/tS4W6LhL2Cs8ADylsD5TNW2iEOGEnYsbbaPJM-Ny-BQIBwwucCGpzAQ2HZI5OPl55d39G54S5me1IVIqOd1gEfEz_Sm3siMLLbAUZHCCVi8uG4APfDJcrzSrvb-EFMFNGdg9HAF-F6I=w2400' />
           <div class="sample-image-text">autumn</div>
       </div>
 
       <div class="sample-image mb-5">
-          <img class="season-img" src='https://lh3.googleusercontent.com/4W28sCXXNpYEEmb0N4m6wan38v0gmjJX9D0gnl3z0dTJddRKM1YTZM05Xz3wi5k1AQhS1gTnb68c5RbFD4H4QqCFdouTT9Zdi5sq7BwTr-OUC7K8GAl9ReXqBP0N0hS4v_-7zzRtwho=w2400' />
+          <img class="season-img img-fluid" src='https://lh3.googleusercontent.com/4W28sCXXNpYEEmb0N4m6wan38v0gmjJX9D0gnl3z0dTJddRKM1YTZM05Xz3wi5k1AQhS1gTnb68c5RbFD4H4QqCFdouTT9Zdi5sq7BwTr-OUC7K8GAl9ReXqBP0N0hS4v_-7zzRtwho=w2400' />
           <div class="sample-image-text">winter</div>
       </div>
     </div>
@@ -116,6 +115,9 @@ li {
   padding:0;
 }
 
+.your{
+  font-size: 1.4rem;
+}
 .main-img{
   height:500px;
   width:1200px;

@@ -6,13 +6,13 @@
       </router-link>
     </div>
     <nav class="navbar navbar-expand-lg navber-right">
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        
             <ul class="navbar-nav mr-5">
 
 
             <li class="nav-item">
                 <router-link
-                class="col-2 px-4"
+                class="px-4"
                 to="/"
                 active-class="link--active"
                 exact
@@ -44,30 +44,12 @@
             </li>
 
             <li class="nav-item">
-                <router-link 
-                class="px-4" 
-                to="/test3"
-                active-class="link--active"
-                exact
-                >
-                test3
-                </router-link>
-            </li>
-
-            <li class="nav-item">
-                <router-link 
-                class="px-4" 
-                to="/Comp1"
-                active-class="link--active"
-                exact
-                >
-                comp1
-                </router-link>
+              <a class="px-4" active-class="link--active" exact>what</a>
             </li>
 
 
             </ul>
-        </div>
+ 
     </nav>
   </div>
 </template>
@@ -75,16 +57,18 @@
 <style scoped>
   .header{
     padding-top: 30px;
-    background-color: antiquewhite;
+    background-color: #efeee8d1;
+    z-index: 3;
   }
   .logo{
+    margin: 0 auto;
     height:100px;
   }
   .logo-img{
     height: 100px;
     float:left;
   }
-  .nav-item{
+  li{
     color: #b9b9b9;
   }
   .link--active{

@@ -1,21 +1,23 @@
 <template>
   <div id="app">
-    <myheader></myheader>
+    <Header></Header>
+    <PageTopBtn></PageTopBtn>
     <router-view/>
-    <button class="btn m-5">ページトップ</button>
     <Footer></Footer>
   </div>
 </template>
 
 <script>
-import myheader from './components/myheader'
+import Header from './components/Header'
 import Footer from './components/Footer'
+import PageTopBtn from './components/PageTopBtn'
 
 export default {
   name: 'App',
   components: {
-    myheader,
-    Footer
+    Header,
+    Footer,
+    PageTopBtn
   }
 }
 </script>
