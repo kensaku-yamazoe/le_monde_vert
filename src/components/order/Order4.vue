@@ -4,12 +4,6 @@
       <h1 class="order-num">{{number}}</h1>
       <p class="order-text">
         {{text1}}
-        <br>
-        {{text2}}
-        <br>
-        <span class="underbar">caution</span>
-        <br>
-        {{caution}}
         </p>
     </div>
     <div class="order-right-img"></div>
@@ -20,10 +14,8 @@
 export default {
   data(){
     return{
-      number: 'no.2',
-      text1: 'パーソナルカラーの診断',
-      text2: 'ファッションテイスト診断',
-      caution: '＊料金が発生いたします¥10000-',
+      number: 'no.4',
+      text1: '型紙作成のための採寸',
     }
   }
 }
@@ -35,9 +27,6 @@ export default {
   display: flex;
   width: 100vw;
   /* height: 100%; */
-}
-.underbar{
-  border-bottom: 1px solid #b9b9b9;
 }
 .order-left-contents{
   position: absolute;

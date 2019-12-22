@@ -1,8 +1,27 @@
 <template>
-  <div id="page-top">
+  <div id="page-top" v-on:click="moveToTop">
     <i class="fas fa-sort-up" id="arrow"></i>
   </div>
 </template>
+
+<script>
+export default {
+  el: '#page-top',
+  methods:{
+    moveToTop(){
+      const duration = 1000;
+      const interval = 25;
+      const step = -window.scrollY / Math.ceil(duration / interval);
+      const timer = setInterval(() => {
+        window.scrollBy(0,step);
+        if(window.scrollY <= 0){
+          clearInterval(timer);
+        }
+      }, interval);
+    }
+  }
+}
+</script>
 
 <style scaped>
   #page-top{
