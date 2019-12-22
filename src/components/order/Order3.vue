@@ -12,8 +12,8 @@
 export default {
   data(){
     return{
-      number: 'no.1',
-      text: '目的、デザイン等の打ち合わせ',
+      number: 'no.3',
+      text: 'デザイン、生地の提案',
     }
   }
 }
